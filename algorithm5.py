@@ -1,6 +1,6 @@
 #1
 def rangeOfnum(start, end):
-   return list(range(start + 1, end))
+    return list(range(start + 1, end))
 
 
 print(rangeOfnum(2,4))
@@ -10,7 +10,11 @@ print(rangeOfnum(2,11))
 
 #2
 def isFourLetters(words):
-    return [word for word in words if len(word) == 4]
+    result = []
+    for word in words:
+        if len(word) == 4:
+            result.append(word)
+    return result
 
 
 print(isFourLetters(["Tomato", "Potato", "Pair"]))
@@ -85,5 +89,8 @@ print(get_budgets(budgetss2))
 
 
 
+#1 Another way
+# return list(range(start + 1, end))
 
-
+#2 Another way
+# return [word for word in words if len(word) == 4]
