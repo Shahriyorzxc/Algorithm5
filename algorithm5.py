@@ -28,7 +28,7 @@ def firstLast(lst):
 
 
 print(firstLast([5, 10, 15, 20, 25]))
-print(firstLast(["edabit", 13, "null", "false", "true"]))
+print(firstLast(["edabit", 13, "null", False, True]))
 print(firstLast(["undefiend", 4, "6", "hello", "null"]))
 
 
